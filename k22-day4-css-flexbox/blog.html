@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài viết nổi bật - F8</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <a href="blog.html" class="logo">
+        <span class="logo__icon">F8</span>
+        <span class="logo__text">HỌC LẬP TRÌNH ĐỂ ĐI LÀM</span>
+      </a>
+      <form class="search">
+        <span class="search__icon">⌕</span>
+        <input type="text" placeholder="Tìm khóa học, bài tập, hỏi đáp..." />
+      </form>
+
+      <div class="header__right">
+        <a href="#">Khóa học của tôi</a>
+
+        <div class="notification">
+          <span>🔔</span>
+          <span class="notification__number">6</span>
+        </div>
+
+        <a href="profile.html" class="header-avatar"> TA </a>
+      </div>
+    </header>
+
+    <!-- ================= BỐ CỤC CHÍNH ================= -->
+    <div class="page-container">
+      <!-- ================= SIDEBAR ================= -->
+      <aside class="sidebar">
+        <nav class="sidebar-menu">
+          <a href="#" class="sidebar-menu__item">
+            <span class="sidebar-menu__icon">⌂</span>
+            <span>Trang chủ</span>
+          </a>
+
+          <a href="#" class="sidebar-menu__item">
+            <span class="sidebar-menu__icon">♜</span>
+            <span>Lộ trình</span>
+          </a>
+
+          <a
+            href="blog.html"
+            class="sidebar-menu__item"
+          >
+            <span class="sidebar-menu__icon">▤</span>
+            <span>Bài viết</span>
+          </a>
+
+          <a href="#" class="sidebar-menu__item">
+            <span class="sidebar-menu__icon">⚑</span>
+            <span>Bản tin</span>
+          </a>
+
+          <a href="#" class="sidebar-menu__item">
+            <span class="sidebar-menu__icon">☁</span>
+            <span>Hỏi đáp</span>
+          </a>
+
+          <a href="#" class="sidebar-menu__item">
+            <span class="sidebar-menu__icon">✎</span>
+            <span>Bài tập</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- ================= NỘI DUNG TRANG ================= -->
+      <main class="main">
+        <section class="blog">
+          <h1 class="blog__title">Bài viết nổi bật</h1>
+
+          <p class="blog__description">
+            Tổng hợp các bài viết chia sẻ về kinh nghiệm tự học lập trình online
+            và các kỹ thuật lập trình web.
+          </p>
+
+          <div class="blog-layout">
+            <!-- ================= DANH SÁCH BÀI VIẾT ================= -->
+            <div class="blog-list">
+              <!-- BÀI VIẾT 1 -->
+              <article class="blog-card">
+                <div class="blog-card__content">
+                  <a href="profile.html" class="author">
+                    <span class="author__avatar">TA</span>
+
+                    <span class="author__name"> Ếch Trendy </span>
+
+                    <span class="author__verified">●</span>
+                  </a>
+
+                  <h2 class="blog-card__title">
+                    Cursor vs Claude Code vs Copilot vs Windsurf: Chọn cái nào?
+                  </h2>
+
+                  <p class="blog-card__description">
+                    Mình đã dùng cả 4 tool này cho dự án web thực tế. Đây là so
+                    sánh thẳng thắn giúp bạn chọn đúng AI assistant theo
+                    workflow và budget của mình.
+                  </p>
+
+                  <div class="blog-card__meta">
+                    <span class="tag">GitHub Copilot</span>
+                    <span>13 giờ trước</span>
+                    <span>· 1 phút đọc</span>
+                  </div>
+                </div>
+
+                <div class="blog-card__right">
+                  <div class="blog-card__actions">
+                    <span>♡</span>
+                    <span>•••</span>
+                  </div>
+
+                  <div class="thumbnail thumbnail--purple">
+                    <span>
+                      So sánh<br />
+                      AI Code<br />
+                      Assistant
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- BÀI VIẾT 2 -->
+              <article class="blog-card">
+                <div class="blog-card__content">
+                  <a href="profile.html" class="author">
+                    <span class="author__avatar">TA</span>
+
+                    <span class="author__name"> Lọc Lõi </span>
+
+                    <span class="author__verified">●</span>
+                  </a>
+
+                  <h2 class="blog-card__title">
+                    Tester trái ngành có cần biết code để xin việc?
+                  </h2>
+
+                  <p class="blog-card__description">
+                    Manual tester có bắt buộc biết lập trình không? Xem phân
+                    tích thực tế JD tuyển dụng và danh sách kỹ năng thay thế cho
+                    người trái ngành.
+                  </p>
+
+                  <div class="blog-card__meta">
+                    <span class="tag">manual testing</span>
+                    <span>14 giờ trước</span>
+                    <span>· 1 phút đọc</span>
+                  </div>
+                </div>
+
+                <div class="blog-card__right">
+                  <div class="blog-card__actions">
+                    <span>♡</span>
+                    <span>•••</span>
+                  </div>
+
+                  <div class="thumbnail thumbnail--light">
+                    <span>
+                      Tester trái ngành<br />
+                      có cần biết code?
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- BÀI VIẾT 3 -->
+              <article class="blog-card">
+                <div class="blog-card__content">
+                  <a href="profile.html" class="author">
+                    <span class="author__avatar">TA</span>
+
+                    <span class="author__name"> Ếch Trendy </span>
+
+                    <span class="author__verified">●</span>
+                  </a>
+
+                  <h2 class="blog-card__title">
+                    Server vs Client Components: Chọn đúng trong Next.js 15
+                  </h2>
+
+                  <p class="blog-card__description">
+                    React 19 và Next.js 15 ra mắt Server Components, nhưng không
+                    phải lúc nào cũng dùng được. Bài viết giải thích khi nào nên
+                    dùng từng loại.
+                  </p>
+
+                  <div class="blog-card__meta">
+                    <span class="tag">Next.js 15</span>
+                    <span>2 ngày trước</span>
+                    <span>· 1 phút đọc</span>
+                  </div>
+                </div>
+
+                <div class="blog-card__right">
+                  <div class="blog-card__actions">
+                    <span>♡</span>
+                    <span>•••</span>
+                  </div>
+
+                  <div class="thumbnail thumbnail--blue">
+                    <span>
+                      Server<br />
+                      VS<br />
+                      Client
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- BÀI VIẾT 4 -->
+              <article class="blog-card">
+                <div class="blog-card__content">
+                  <a href="profile.html" class="author">
+                    <span class="author__avatar">TA</span>
+
+                    <span class="author__name"> Lọc Lõi </span>
+
+                    <span class="author__verified">●</span>
+                  </a>
+
+                  <h2 class="blog-card__title">
+                    Kỹ năng mềm tester fresher cần có trong team Agile
+                  </h2>
+
+                  <p class="blog-card__description">
+                    Giao tiếp khi báo bug, hỏi requirement mơ hồ, daily standup
+                    - tester mới cần kỹ năng mềm gì? Ví dụ thực tế và checklist
+                    tự đánh giá.
+                  </p>
+
+                  <div class="blog-card__meta">
+                    <span class="tag">tester fresher</span>
+                    <span>2 ngày trước</span>
+                    <span>· 1 phút đọc</span>
+                  </div>
+                </div>
+
+                <div class="blog-card__right">
+                  <div class="blog-card__actions">
+                    <span>♡</span>
+                    <span>•••</span>
+                  </div>
+
+                  <div class="thumbnail thumbnail--cyan">
+                    <span>
+                      Kỹ năng mềm<br />
+                      cho Tester<br />
+                      Fresher
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- BÀI VIẾT 5 -->
+              <article class="blog-card">
+                <div class="blog-card__content">
+                  <a href="profile.html" class="author">
+                    <span class="author__avatar">TA</span>
+
+                    <span class="author__name"> Ếch Trendy </span>
+
+                    <span class="author__verified">●</span>
+                  </a>
+
+                  <h2 class="blog-card__title">
+                    AI làm web 2026: 10 cách thực chiến tăng tốc thiết kế
+                  </h2>
+
+                  <p class="blog-card__description">
+                    Tích hợp AI vào quy trình làm web thực sự trông như thế nào?
+                    Từ wireframe, prototype cho tới quá trình publish sản phẩm.
+                  </p>
+
+                  <div class="blog-card__meta">
+                    <span class="tag">v0.dev</span>
+                    <span>5 ngày trước</span>
+                    <span>· 1 phút đọc</span>
+                  </div>
+                </div>
+
+                <div class="blog-card__right">
+                  <div class="blog-card__actions">
+                    <span>♡</span>
+                    <span>•••</span>
+                  </div>
+
+                  <div class="thumbnail thumbnail--dark">
+                    <span>
+                      AI trong<br />
+                      Thiết kế Web<br />
+                      2026
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CỘT PHẢI ================= -->
+            <aside class="right-sidebar">
+              <section class="topics">
+                <h3 class="topics__title">XEM CÁC BÀI VIẾT THEO CHỦ ĐỀ</h3>
+
+                <div class="topics__list">
+                  <a href="#">Front-end / Mobile apps</a>
+                  <a href="#">Back-end / Devops</a>
+                  <a href="#">AI / LLM</a>
+                  <a href="#">Tester / Testing</a>
+                  <a href="#">UI / UX / Design</a>
+                  <a href="#">Others</a>
+                </div>
+              </section>
+
+              <section class="advertisement advertisement--blue">
+                <h3>
+                  Khóa học<br />
+                  HTML CSS Pro
+                </h3>
+
+                <p>✓ Chuyên sâu hơn khóa Free</p>
+                <p>✓ Thực hành 8 dự án</p>
+                <p>✓ 300+ bài tập</p>
+                <p>✓ Tặng ứng dụng Flashcards</p>
+
+                <a href="#" class="advertisement__button"> Tìm hiểu thêm </a>
+              </section>
+
+              <section class="advertisement advertisement--red">
+                <h3>F8 Official</h3>
+
+                <p>✓ Vlog và cuộc sống lập trình viên</p>
+                <p>✓ Chia sẻ kinh nghiệm làm việc thực tế</p>
+                <p>✓ Hiểu con người, tính cách Founder F8</p>
+              </section>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column footer__column--large">
+          <h3 class="footer__heading">
+            <span class="footer-logo">F8</span>
+            HỌC LẬP TRÌNH ĐỂ ĐI LÀM
+          </h3>
+
+          <p>Điện thoại: 08 1919 8989</p>
+          <p>Email: contact@f8.edu.vn</p>
+
+          <p>Địa chỉ liên hệ: Số 1, ngõ 41, Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+        </div>
+
+        <div class="footer__column">
+          <h3 class="footer__heading">VỀ F8</h3>
+
+          <a href="#">Giới thiệu</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Điều khoản & Quy định</a>
+          <a href="#">Chính sách bảo mật</a>
+        </div>
+
+        <div class="footer__column">
+          <h3 class="footer__heading">HỖ TRỢ</h3>
+
+          <a href="#">Chính sách thanh toán</a>
+          <a href="#">Chính sách vận chuyển</a>
+          <a href="#">Chính sách kiểm hàng</a>
+          <a href="#">Quy định về giá</a>
+        </div>
+
+        <div class="footer__column">
+          <h3 class="footer__heading">CÔNG CỤ</h3>
+
+          <a href="#">Tạo CV xin việc</a>
+          <a href="#">Rút gọn liên kết</a>
+          <a href="#">Clip-path maker</a>
+          <a href="#">Snippet generator</a>
+          <a href="#">CSS Grid generator</a>
+        </div>
+
+        <div class="footer__column footer__column--large">
+          <h3 class="footer__heading">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h3>
+
+          <p>
+            Địa chỉ: Tầng 4, Tòa nhà Anh Minh, số 36 Hoàng Cầu, Thành phố Hà Nội
+          </p>
+
+          <p>Mã số doanh nghiệp: 0109922901</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+      </div>
+    </footer>
+  </body>
+</html>

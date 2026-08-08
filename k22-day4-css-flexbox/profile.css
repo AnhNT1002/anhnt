@@ -1,0 +1,644 @@
+/* =========================
+   THIẾT LẬP CHUNG
+========================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #292929;
+  background-color: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 22px;
+
+  border-top: 3px solid #ff7a00;
+  border-bottom: 1px solid #e8ebed;
+
+  background-color: #ffffff;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #5f6670;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.logo-icon,
+.footer-logo {
+  width: 36px;
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  color: #ffffff;
+  background-color: #ff6b2c;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.search {
+  width: 420px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 16px;
+
+  border: 2px solid #e8ebed;
+  border-radius: 999px;
+}
+
+.search__icon {
+  color: #777777;
+  font-size: 2rem;
+}
+
+.search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 1.4rem;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.small-avatar {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffb300, #00a86b);
+
+  font-weight: 700;
+}
+
+/* =========================
+   BỐ CỤC TRANG CÁ NHÂN
+========================= */
+
+.profile {
+  max-width: 1740px;
+  min-height: 700px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+
+  margin: 0 auto;
+  padding: 36px 38px 80px;
+}
+
+/* =========================
+   CỘT TRÁI
+========================= */
+
+.profile-info {
+  width: 390px;
+  flex-shrink: 0;
+}
+
+.avatar-border {
+  width: 190px;
+  height: 190px;
+
+  margin: 0 auto 16px;
+  padding: 8px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #e53935 0 25%,
+    #4285f4 25% 50%,
+    #34a853 50% 75%,
+    #fbbc05 75% 100%
+  );
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+
+  color: #999999;
+  background-color: #e5e5e5;
+
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.profile-info__name {
+  margin-bottom: 4px;
+
+  font-size: 2.6rem;
+  line-height: 1.3;
+}
+
+.profile-info__username {
+  margin-bottom: 18px;
+
+  color: #555555;
+  font-size: 1.6rem;
+}
+
+.profile-info__details p {
+  margin-bottom: 14px;
+
+  font-size: 1.4rem;
+}
+
+/* =========================
+   CỘT PHẢI
+========================= */
+
+.profile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================
+   ACTIVITY
+========================= */
+
+.activity {
+    max-width: 900px;
+}
+
+.activity__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.activity__header h2 {
+    font-size: 1.8rem;
+}
+
+.activity__options {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    font-size: 1.3rem;
+}
+
+/* =========================
+   HEATMAP
+========================= */
+
+.heatmap {
+    width: 640px;
+    min-height: 110px;
+}
+
+
+.heatmap__months {
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+
+    margin-left: 32px;
+
+    font-size: 0.9rem;
+}
+
+.heatmap__months span {
+    text-align: left;
+}
+
+/* Phần ngày và các ô */
+
+.heatmap__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+
+    margin-top: 6px;
+}
+
+.heatmap__days {
+    width: 26px;
+    height: 74px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    flex-shrink: 0;
+
+    font-size: 0.9rem;
+}
+
+.heatmap__grid {
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(52, 8px);
+    grid-auto-rows: 8px;
+    gap: 3px;
+}
+
+.heatmap__grid span {
+    width: 8px;
+    height: 8px;
+
+    display: block;
+
+    border-radius: 2px;
+    background-color: #ebedf0;
+}
+
+.heatmap__grid .heatmap__cell--light {
+    background-color: #9be9a8;
+}
+
+.heatmap__grid .heatmap__cell--green {
+    background-color: #40c463;
+}
+
+.heatmap__grid .heatmap__cell--dark {
+    background-color: #216e39;
+}
+
+.heatmap__level {
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+
+    margin-top: 12px;
+    margin-left: 32px;
+
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+.heatmap__level i {
+    width: 8px;
+    height: 8px;
+
+    display: inline-block;
+
+    border-radius: 2px;
+    background-color: #ebedf0;
+}
+
+.heatmap__level i:nth-of-type(2) {
+    background-color: #9be9a8;
+}
+
+.heatmap__level i:nth-of-type(3) {
+    background-color: #40c463;
+}
+
+.heatmap__level i:nth-of-type(4) {
+    background-color: #30a14e;
+}
+
+.heatmap__level i:nth-of-type(5) {
+    background-color: #216e39;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 30px;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabs__item {
+  padding: 12px 12px;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.tabs__item--active {
+  color: #292929;
+  border-bottom: 2px solid #1b74e4;
+}
+
+/* =========================
+   DANH SÁCH KHÓA HỌC
+========================= */
+
+.course-list {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 20px;
+
+  /* Giữ khóa học trên một hàng ngang */
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+}
+
+.course-card {
+  min-width: 360px;
+
+  flex: 1;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background-color: #f7f7f7;
+}
+
+/* Ảnh bìa khóa học */
+
+.course-card__cover {
+  position: relative;
+
+  height: 235px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.course-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.course-card__cover h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.course-card__cover p {
+  margin-top: 6px;
+
+  font-size: 1.8rem;
+}
+
+.course-card__cover strong {
+  color: #ffe500;
+}
+
+.course-card__cover--javascript {
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #ffe600, #ff8a00);
+}
+
+.course-card__cover--html {
+  background: linear-gradient(135deg, #00a8ff, #5419c9);
+}
+
+.course-card__cover--fullstack {
+  background: linear-gradient(135deg, #d7868d, #3a2c89 55%, #1617c8);
+}
+
+/* Nội dung khóa học */
+
+.course-card__content {
+  padding: 14px 16px;
+}
+
+.course-card__content h3 {
+  margin-bottom: 8px;
+
+  font-size: 1.7rem;
+}
+
+.course-card__price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-card__price del {
+  color: #555555;
+}
+
+.course-card__price strong {
+  color: #f05123;
+}
+
+.course-card__rating {
+  margin-top: 12px;
+
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+
+.course-card__rating span {
+  margin-left: 5px;
+}
+
+.course-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin-top: 18px;
+
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 58px 38px 28px;
+
+  color: #a9b3bb;
+  background-color: #181821;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer__column {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__column--large {
+  flex: 1.5;
+}
+
+.footer__heading {
+  min-height: 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+  color: #ffffff;
+
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.footer__column p,
+.footer__column a {
+  margin-bottom: 13px;
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.footer__column a:hover {
+  color: #ffffff;
+}
+
+.footer__bottom {
+  margin-top: 42px;
+  padding-top: 24px;
+
+  border-top: 1px solid #2b2b34;
+
+  font-size: 1.2rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 1100px) {
+  .profile {
+    gap: 35px;
+  }
+
+  .profile-info {
+    width: 270px;
+  }
+
+  .search {
+    width: 320px;
+  }
+
+  .footer__columns {
+    flex-wrap: wrap;
+  }
+
+  .footer__column {
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .back-link span:last-child,
+  .header__right > a {
+    display: none;
+  }
+
+  .header {
+    gap: 12px;
+  }
+
+  .search {
+    flex: 1;
+    width: auto;
+  }
+
+  .profile {
+    flex-direction: column;
+
+    padding: 26px 16px 60px;
+  }
+
+  .profile-info {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .activity__options {
+    display: none;
+  }
+
+  .course-card {
+    min-width: 300px;
+  }
+
+  .footer__columns {
+    flex-direction: column;
+  }
+}
