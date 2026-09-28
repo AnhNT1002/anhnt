@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery sản phẩm</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    .active { border: 3px solid #0074BC; }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+
+  <div class="w-96 bg-white p-6 rounded-xl shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">Sản phẩm</h1>
+
+    <!-- Ảnh chính -->
+    <img id="mainImage" src="https://picsum.photos/id/26/500/400" alt="Sản phẩm góc nhìn 1"
+      class="w-full h-64 object-cover rounded-lg mb-4">
+
+    <!-- Ảnh nhỏ -->
+    <div class="flex gap-3">
+      <img src="https://picsum.photos/id/26/500/400" alt="Sản phẩm góc nhìn 1"
+        class="thumbnail active w-24 h-20 object-cover rounded-lg cursor-pointer">
+
+      <img src="https://picsum.photos/id/96/500/400" alt="Sản phẩm góc nhìn 2"
+        class="thumbnail w-24 h-20 object-cover rounded-lg cursor-pointer">
+
+      <img src="https://picsum.photos/id/160/500/400" alt="Sản phẩm góc nhìn 3"
+        class="thumbnail w-24 h-20 object-cover rounded-lg cursor-pointer">
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Đổi Theme</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body{background-color: white; color: #111;}
+        body.dark-mode{background-color: #111827; color: white;}
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center transition-all duration-300">
+    <div class="w-96 p-6 border rounded-xl shadow-lg">
+        <h1 class="text-2xl font-bold mb-3">Đổi Theme Sáng/Tối</h1>
+        <p class="mb-5">Nhấn nút để thay đổi chế độ</p>
+        <button id="themeBtn" class="w-full bg-[#0074bc] hover:bg-[#005f99] text-white px-4 py-2 rounded-lg cursor-pointer font-bold text-xl  ">Chế độ tối</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
